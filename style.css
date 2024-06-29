@@ -85,21 +85,23 @@
 }
 
 #outerCircle {
-    height: 60px;
-    width: 60px;
+    height: 37px;
+    width: 37px;
     position: absolute;
     border-radius: 60px;
-    background-color: #3a6b94;
+    border: 13px solid #3a6b94;
+    background-color: transparent;
 }
 
-#innerCircle {
+
+/* #innerCircle {
     height: 35px;
     width: 35px;
     position: absolute;
     border-radius: 60px;
     background-color: #3a6b94;
     background-color: #ffffff;
-}
+} */
 
 #winMsg {
     position: relative;
