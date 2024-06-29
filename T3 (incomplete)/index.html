@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="themes.css">
+    <!-- <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="/asset/node_modules/@flaticon/flaticon-uicons/css/regular/all.css"> -->
+</head>
+
+<body>
+    <!-- <i class="fi fi-tr-mobile-button"></i> -->
+    
+    <div id="container">
+
+        <div id="board">
+            <span index="0" class="cell"></span>
+            <span index="1" class="cell"></span>
+            <span index="2" class="cell"></span>
+            <span index="3" class="cell"></span>
+            <span index="4" class="cell"></span>
+            <span index="5" class="cell"></span>
+            <span index="6" class="cell"></span>
+            <span index="7" class="cell"></span>
+            <span index="8" class="cell"></span>
+        </div>
+        <span id="winStroke1"></span>
+        <span id="winStroke2"></span>
+
+    </div>
+    <h1 id="winMsg"></h1>
+    <button id="reset" onclick="clearOut()">New Game</button><br>
+
+    <button id="insetShadows" onclick="intoTheDark()">Into The Dark</button>
+    <!-- inset shadows -->
+    <button id="spirits" onclick="evilSpirits()">Evil Spirits</button>
+    <!-- multiple animated shadows -->
+    <button id="blacks" onclick="blackOut()"><b>Black Out</b></button>
+    <!-- all black ie board, tokens -->
+    <button id="outline" onclick="outlined()">Outlined</button>
+    <!-- borders but not colors -->
+    <button id="void" onclick="theVoid()">The Void</button>
+    <!-- absolute no colors, borders -->
+    <button id="eclipse" onclick="lunarEclipse()">Lunar Eclipse</button>
+    <!-- radial board bgc -->
+    <button id="darkFade" onclick="nightBlindness()">Night Blindness</button>
+    <!--  -->
+    <button id="funk" onclick="cyberPunk()">Cyber Punk</button>
+    <!-- bright primary colors eg magenta -->
+    <button id="minimal" onclick="minimalistic()">minimal</button>
+    <!-- bright primary colors eg magenta -->
+    <button id="ethereal" onclick="ethereal()">Ethereal</button>
+    <!-- whites with light shadows -->
+    <button id="carved" onclick="sculpt()">Carved Sculpture</button>
+    <!-- whites with light shadows -->
+    <button id="hell" onclick="hellFire()">Hell Fire</button>
+    <!-- whites with light shadows -->
+
+
+
+    <button id="default" onclick="defaultTheme()">Default</button>
+    <!-- back to normal -->
+
+
+    <h1 id="test"></h1>
+
+    <script src="script.js"></script>
+    <script src="themes.js"></script>
+
+    <!-- <script src="app.js"></script> -->
+</body>
+
+</html>
