@@ -15,13 +15,13 @@ var winStroke2 = document.getElementById("winStroke2");
 function clicked() {
     var o = document.createElement("div");
     var span1o = document.createElement("span");
-    var span2o = document.createElement("span");
+    // var span2o = document.createElement("span");
     o.id = "o";
     o.className = "o";
     span1o.id = "outerCircle";
-    span2o.id = "innerCircle";
+    // span2o.id = "innerCircle";
     o.appendChild(span1o);
-    o.appendChild(span2o);
+    // o.appendChild(span2o);
 
     var x = document.createElement("div");
     var span1x = document.createElement("span");
