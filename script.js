@@ -100,6 +100,9 @@ function changePlayer() {
     (player == "x") ? player = "o" : player = "x";
 }
 
+// test('changePlayer throws error with non-string argument', () => {
+//   expect(() => changePlayer(123)).toThrow('Invalid argument: player must be a string');
+// });
 
 function clearOut() {
     // player = "x";
