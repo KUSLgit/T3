@@ -5,8 +5,23 @@ var stroke1 = document.getElementById("stroke1");
 var stroke2 = document.getElementById("stroke2");
 var innerCircle = document.getElementById("innerCircle");
 var outerCircle = document.getElementById("outerCircle");
-// var Xs = document.querySelectorAll(".x");
+var Xs = document.querySelectorAll(".x"); //? now testing
 // var Os = document.querySelectorAll(".o");
+
+// function intoTheDark() {
+//     cells.forEach(cell => {
+//         cell.style.boxShadow = "inset 0 0 15px 10px #000";
+//         cell.style.background = "none";
+//         cell.style.animation = "none";
+//         cell.style.filter = "opacity(100%)";
+
+//         cell.style.borderRadius = "0px"
+//         cell.style.backgroundColor = "silver";
+//     });
+//     Xs.forEach(x => {
+//         x.style.backgroundColor = "red";
+//     });
+// }
 
 function intoTheDark() {
     cells.forEach(cell => {
@@ -17,13 +32,17 @@ function intoTheDark() {
 
         cell.style.borderRadius = "0px"
         cell.style.backgroundColor = "silver";
+
+        // Select .x elements within the current cell
+        var xElements = cell.querySelectorAll(".x");
+        xElements.forEach(x => {
+            x.style.backgroundColor = "red";
+        });
     });
     board.style.backgroundColor = "#479aa1";
     board.style.background = "none";
-    //! stroke1.style.backgroundColor = "red";
-    // Xs.forEach(x => {
-    //     x.style.backgroundColor = "red";
-    // });
+    // stroke1.style.backgroundColor = "red"; //? now testing
+
 }
 
 function evilSpirits() {
